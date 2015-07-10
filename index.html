@@ -1,0 +1,41 @@
+<html>
+<head>
+<!-- use the "claro" theme -->
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css">
+<!-- load dojo and provide config via data attribute -->
+<script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js" data-dojo-config="async: true, parseOnLoad:true"></script>
+<script src="main.js"></script>
+</head>
+
+<!-- Dojo uses four themes for its CSS class: Claro, Tundra, Nihilo, and Soria. We will use Claro in this example, but if you want to change the theme, just replace the "claro" class in the body and the link in the head to whichever theme you choose -->
+<!-- add the "claro" CSS class to the body -->
+<body class="claro">
+    <h>My Favorite Movies:</h>
+
+<!-- 1) We are going to use Dojo to make cooler tooltips with images and some summary text. Lets make a list of our favorite movies and make tooltips that give a short description of each.--> 
+<!-- 2) Create an empty <li>. In that <li>, create a link with <a> and the name of one of your favorite movies-->
+<!-- 3) In that <a>, include an "href" to your movies IMDB page. Give the <a> an "id" with your movie name.-->
+<!-- 4) Repeat this process for however many movies you want in your list-->
+
+<ul>
+    <!-- List your favorite movies here! -->
+    <!-- Sample list item : <li><a href="https://www.imdb.com/title/tt0112573/" id="movieBraveheart">Braveheart</a></li> -->
+</ul>
+
+<!-- 5) Give the provided <div> the class "dijitHidden"-->
+
+<!-- 6) Create another <div> and access Dojo's Dijit widget tooltip by giving it the attribute "data-dojo-type" and setting it equal to "dijit/Tooltip". In the same <div>, connect your tooltip to a movie in your list by using "data-dojo-props" and set it equal to "connectId: name of your movies id". Now you have an empty tooltip! Lets put stuff in it! -->
+
+<!-- 7) Now we are going to insert an image in our tooltip! Paste this tag: <img style="width:100px; height:133px; display:block; float:left; margin-right:10px;" src="your_movies_image" />  and set "src" to a link of an image of your movie found on the web.-->
+
+<!-- 8) Create a <p> element and put the title of the movie along with a short description using this format: 
+ <p style="width:400px; height:100px"><strong>Movie Title</strong><br /> Movie description.</p>-->
+
+<!-- 9) Repeat this process for however many movies you have in your list. Once you are done, you can check if it works in JSbin or on your local host-->
+
+<div>
+  <!-- Create your cool Dojo tooltips here! -->  
+</div>
+
+</body>
+</html>
